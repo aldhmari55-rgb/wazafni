@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>إضافة وظيفة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-xl shadow">
+        <h2 class="text-xl font-bold mb-4">أضف إعلان وظيفة جديد</h2>
+        <form method="POST">
+            <label class="block mb-2 text-sm font-bold">المسمى الوظيفي:</label>
+            <input type="text" name="title" required class="w-full border p-2 rounded mb-4">
+
+            <label class="block mb-2 text-sm font-bold">اسم الشركة / المحل:</label>
+            <input type="text" name="company" required class="w-full border p-2 rounded mb-4">
+
+            <label class="block mb-2 text-sm font-bold">العنوان في ذمار:</label>
+            <input type="text" name="location" required class="w-full border p-2 rounded mb-4">
+
+            <label class="block mb-2 text-sm font-bold">تفاصيل الوظيفة:</label>
+            <textarea name="details" required class="w-full border p-2 rounded mb-4"></textarea>
+
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded font-bold">نشر الوظيفة</button>
+        </form>
+        <a href="/" class="block text-center mt-4 text-sm text-gray-500">إلغاء والعودة</a>
+    </div>
+</body>
+</html>
